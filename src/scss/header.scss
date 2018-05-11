@@ -1,0 +1,27 @@
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+
+  h1 {
+    margin-right: 20px;
+  }
+
+  .player {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    margin: 0 20px;
+  }
+
+  .black {
+    background-color: #000;
+  }
+
+  .white {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,33 @@
+.board {
+  margin: 20px auto;
+  background-color: #090;
+  border-collapse: collapse;
+
+  td {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    &:after{
+      display: block;
+      width: 90%;
+      height: 90%;
+      margin: 5%;
+      border-radius: 50%;
+      border: 1px solid #999;
+    }
+    &[data-disc="white"],
+    &[data-disc="black"]{
+      pointer-events: none;
+    }
+    &[data-disc="white"]:after{
+      content: "";
+      background-color: #fff;
+    }
+    &[data-disc="black"]:after{
+      content: "";
+      background-color: #000;
+    }
+  }
+}
